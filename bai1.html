@@ -8,12 +8,12 @@
     <meta name="author" content="hege refsnes">
     <title>Document</title>
 </head>
-<style>
+<!-- <style>
     * {
         box-sizing: border-box;
         margin: auto;
     }
-</style>
+</style> -->
 
 <body>
     <!--bai 2-->
@@ -31,18 +31,33 @@
     <!--bai 3-->
     <div id="bai3" style="width: 500px;">
         <p>
+
             day la van ban <i>in nghieng</i> <b>va in dam</b> va <u>gach duoi</u>
         </p>
     </div>
 
+    <div id="bai3.2">
+        <span>
+            <h1 style="color: yellow; ">high flying</h1>
+            <p>i gazed down into valleys</p>
+        </span>
+        <span>
+            <h1 style="color: yellow; margin-left: 100px;">high flying</h1>
+            <p style="margin-left: 100px;">i gazed down into valleys</p>
+        </span>
+        <span>
+            <h1 style="color: yellow; margin-left: 200px;">high flying</h1>
+            <p style="margin-left: 200px;">i gazed down into valleys</p>
+        </span>
+    </div>
     <!--bai4-->
-    <ol>
+    <ol type="I">
         <li>item one</li>
         <li>item two</li>
         <li>item three</li>
         <li>
             item four
-            <ol>
+            <ol type="I">
                 <li>item 4.1</li>
                 <li>item 4.2</li>
                 <li>item 4.3</li>
@@ -54,14 +69,102 @@
     <!--bai 5-->
     <a href="">nhan vao link de xem</a>
     <!--bai 6-->
-    <table>
+    <table border="1" cellpadding="20px" width="40%" style="margin-left: 200px;">
         <tr>
             <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
+            <td colspan="3">2</td>
+        </tr>
+        <tr>
+            <td rowspan="3">3</td>
+            <td style="background-color: yellow;">4</td>
+            <td style="background-color: yellow;">5</td>
+            <td rowspan="2" style="background-color: paleturquoise;">6</td>
+        </tr>
+        <tr>
+
+            <td style="background-color: yellow;">7</td>
+            <td style="background-color: yellow;">8</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: orangered;">9</td>
+            <td style="background-color: orchid;">10</td>
+
         </tr>
     </table>
+
+    <table border="1" cellpadding="20px" width="20%" style="margin-top: 20px; background-color: peru;">
+        <thead>
+            <tr>
+                <td>(1)</td>
+                <td>(2)</td>
+                <td>(3)</td>
+                <td>(4)</td>
+                <td>(5)</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td colspan="3">Part I</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="2">chapter 1</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td colspan="3"></td>
+                <td>section A</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td colspan="3"></td>
+                <td>section B</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="2">chapter 2</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td colspan="3"></td>
+                <td>section A</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td colspan="3"></td>
+                <td>section B</td>
+                <td></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <form>
+        support: <input type="text" name="ten" pattern="[a-zA-Z]*{15}" title="this is a title" required minlength="3"> <br>
+        <select>
+            <option value="">nay</option>
+            <option value="">ne</option>
+        </select>
+    </form>
+
+    <span>b</span>
+    <span>a</span>
+
 </body>
 
 </html>
